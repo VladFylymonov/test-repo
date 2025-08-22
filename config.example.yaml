@@ -1,0 +1,23 @@
+platforms: ["youtube", "instagram", "tiktok"]
+criteria:
+  niches: ["маркетинг", "фитнес"]
+  hashtags: ["marketing", "fitness"]
+  min_views: 10000
+  min_likes: 500
+  min_comments: 20
+  min_like_view_ratio: 0.02
+  max_results_per_source: 50
+export:
+  csv_path: "./results.csv"
+  own_metrics_csv_path: "./own_metrics.csv"
+  google_sheets: null
+credentials:
+  youtube_api_key: "YOUR_YOUTUBE_API_KEY"
+  instagram_access_token: "YOUR_IG_ACCESS_TOKEN"
+  instagram_business_account_id: "YOUR_IG_BUSINESS_ID"
+  tiktok_ms_token: "YOUR_TIKTOK_MS_TOKEN"
+own_accounts:
+  youtube_channel_ids: ["UC_x5XG1OV2P6uZZ5FSM9Ttw"]
+  instagram_user_ids: ["YOUR_IG_BUSINESS_ID"]
+schedule:
+  cron: "0 * * * *"  # every hour
